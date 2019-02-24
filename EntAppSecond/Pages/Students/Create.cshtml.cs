@@ -9,6 +9,7 @@ namespace EntAppSecond.Pages.Students
 {
     public class CreateModel : PageModel
     {
+        [BindProperty]
         public Student Student { get; set; }
 
         public void OnGet()

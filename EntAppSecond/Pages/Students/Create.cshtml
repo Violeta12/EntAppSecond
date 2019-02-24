@@ -3,34 +3,54 @@
 @{
     ViewData["Title"] = "Create";
 }
+@addTagHelper*,Microsoft.AspNetCore.MvcTagHelpers
 
-<h2>Create</h2>
+    <h2>Create</h2>
+<!DOCTYPE html>
+ 
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Create</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <form method="post">
 
-<form method="post">
+            <div>
 
-    <div>
+                <label asp-for=Student.FirstName></label>
+                <input asp-for=Student.FirstName>
 
-        <label asp-for=Student.FirstName></label>
-        <input asp-for=Student.FirstName>
+            </div>
 
-    </div>
+            <div>
 
-    <div>
+                <label asp-for=Student.LastName></label>
+                <input asp-for=Student.LastName>
 
-        <label asp-for=Student.LastName></label>
-        <input asp-for=Student.LastName>
+            </div>
 
-    </div>
+            <div>
 
-    <div>
+                <label asp-for=Student.StudentID></label>
+                <input asp-for=Student.StudentID>
 
-        <label asp-for=Student.StudentID></label>
-        <input asp-for=Student.StudentID>
+            </div>
 
-    </div>
+            <button type="submit">Press Me</button>
+
+            <div asp-validation-summary="All"></div>
+
+            <span asp-validation-for="Student.StudentID"></span>
 
 
-    <button type="submit">Press Me</button>
 
 
-</form>
+        </form>
+    </body>
+</html>
