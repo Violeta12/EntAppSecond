@@ -18,14 +18,16 @@ body {
     border: solid;
 }
 
-.filed-validation-error 
+.field-validation-error 
 {
     color:red;
     font-size: 80%;
     font-style: italic;
+    font-weight:bold;
 }
 
 .validation-summary-errors 
 {
     border:solid red;
+    font-weight:bold;
 }
