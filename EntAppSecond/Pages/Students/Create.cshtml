@@ -24,6 +24,11 @@
     <body>
         <form method="post">
 
+            <div asp-validation-summary="All"></div>
+
+            <span asp-validation-for="Student.StudentID"></span>
+
+
             <div>
 
                 <label asp-for=Student.FirstName></label>
@@ -45,11 +50,43 @@
 
             </div>
 
+            <div>
+
+                <label asp-for=Student.DateOfBirth></label>
+                <input asp-for=Student.DateOfBirth>
+
+            </div>
+
+            <div>
+
+                <label asp-for=Student.NumberModules></label>
+                <input asp-for=Student.NumberModules>
+
+            </div>
+
+            <div>
+
+                <label asp-for=Student.Height></label>
+                <input asp-for=Student.Height>
+
+            </div>
+
+            <div>
+
+                <label asp-for=Student.Email></label>
+                <input asp-for=Student.Email>
+
+            </div>
+
+            <div>
+
+                <label asp-for=Student.EmailConfirm></label>
+                <input asp-for=Student.EmailConfirm>
+
+            </div>
+
             <button type="submit">Press Me</button>
 
-            <div asp-validation-summary="All"></div>
-
-            <span asp-validation-for="Student.StudentID"></span>
 
 
 
